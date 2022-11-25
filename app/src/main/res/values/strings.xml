@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Crossword_Alfa</string>
+    <string name="crossword">Crossword</string>
+    <string name="selectionText">Что хотите сделать?</string>
+    <string name="btnExit">Выход</string>
+    <string name="btnPlay">Играть</string>
+    <string name="btnEasily">Легко</string>
+    <string name="btnMedium">Средне</string>
+    <string name="btnDifficult">Сложно</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="easilyQuestion">Лёгкий уровень сложности подразумевает очень лёгкие вопросы, на которые вы точно знаете ответ, а также неограниченное кол-во времени</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="difficultQuestion">Сложный уровень подразумевает очень тяжёлые вопросы с подвохами, на которые большинству людей понадобится хорошенько подумать</string>
+    <string name="textInfToPl">Введите свой ответ сюда</string>
+    <!-- Вопросы -->
+    <string name="questionOne">Что упало на голову Ньютану?</string>
+    <string name="questionTwo">Как называется римский амфитеатр?</string>
+    <string name="questionThree">Что создают пчёлы из пыльцы?</string>
+    <string name="questionFour">Мифическое летающее существо,\nиз сказок и легенд.</string>
+    <string name="questionFive">Как называется место,\nгде учёные создают лекарства\nи изучают разные болезни?</string>
+
+</resources>

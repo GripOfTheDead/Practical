@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EasilyGame">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Лёгкий уровень"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/easilyCrossword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextRespond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textInfoToPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/textInfToPl"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRespond"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/easilyCrossword"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/grrrr"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textInfoToPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textViewRespondOne"
+            android:layout_width="174dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:text="Я   Б    Л    О    К    О"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textTextRespondTwo"
+            android:layout_width="198dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="2dp"
+            android:text=" К    О    Л    И    З   Е  Й"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textViewRespondTree"
+            android:layout_width="90dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="1dp"
+            android:text="  М   Ё   Д"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textViewRespondFour"
+            android:layout_width="174dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="31dp"
+            android:text="Д   Р   А    К    О    Н"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textViewRespondFive"
+            android:layout_width="304dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="85dp"
+            android:text="Л   А    Б    О    Р   А    Т    О   Р   И   Я"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textInfoToPlay"
+        app:layout_constraintEnd_toEndOf="@+id/textInfoToPlay"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textInfoToPlay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:onClick="onClickRadioButton"
+            android:id="@+id/oneQues"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginBottom="8dp"
+            android:text="Первый вопрос"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton2"
+            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/radioButton2"
+            app:layout_constraintTop_toTopOf="@+id/button"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <RadioButton
+            android:onClick="onClickRadioButton"
+            android:id="@+id/twoQues"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp"
+            android:text="Второй вопрос"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton3"
+            app:layout_constraintEnd_toEndOf="@+id/radioButton3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/radioButton3" />
+
+        <RadioButton
+            android:onClick="onClickRadioButton"
+            android:id="@+id/threeQues"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp"
+            android:text="Третий вопрос"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton4"
+            app:layout_constraintStart_toStartOf="@+id/radioButton4" />
+
+        <RadioButton
+            android:onClick="onClickRadioButton"
+            android:id="@+id/fourQues"
+            android:layout_width="173dp"
+            android:layout_height="29dp"
+            android:layout_marginBottom="8dp"
+            android:text="Четвёртый вопрос"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton5"
+            app:layout_constraintStart_toStartOf="@+id/radioButton5" />
+
+        <RadioButton
+            android:onClick="onClickRadioButton"
+            android:id="@+id/fiveQues"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_marginBottom="48dp"
+            android:text="Пятый вопрос"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonRespond"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:text="Ответить"
+        android:background="@drawable/btncorners"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSurrender"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSurrender"
+        app:layout_constraintStart_toStartOf="@+id/buttonSurrender" />
+
+    <Button
+        android:onClick="surrenderBut"
+        android:id="@+id/buttonSurrender"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/btncorners"
+        android:text="Сдаться"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
